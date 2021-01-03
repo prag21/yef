@@ -64,7 +64,7 @@ class _ContactState extends State<Contact> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(top: 30, left: 40, right: 30),
+                padding: EdgeInsets.only(top: 30, left: 40, right: 20),
                 child: RaisedButton(
                   padding: EdgeInsets.symmetric(horizontal: 35.0),
                   shape: RoundedRectangleBorder(
@@ -123,7 +123,7 @@ class _ContactState extends State<Contact> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(top: 30, left: 70, right: 30),
+                padding: EdgeInsets.only(top: 30, left: 70, right: 20),
                 child: RaisedButton(
                   padding: EdgeInsets.symmetric(horizontal: 40.0),
                   shape: RoundedRectangleBorder(
@@ -191,7 +191,7 @@ class _ContactState extends State<Contact> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(top: 30, right: 30),
+                padding: EdgeInsets.only(top: 30, right: 20),
                 child: RaisedButton(
                   padding: EdgeInsets.symmetric(horizontal: 40.0),
                   shape: RoundedRectangleBorder(

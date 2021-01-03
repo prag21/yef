@@ -31,7 +31,7 @@ class _RapidResponseState extends State<RapidResponse> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30),
+            padding: EdgeInsets.only(left: 20, top: 30),
             child: Text(
               'Beneficiary Details',
               style: TextStyle(
@@ -41,7 +41,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -64,7 +64,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -87,7 +87,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -112,7 +112,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -136,7 +136,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -160,7 +160,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -192,7 +192,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 40, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 40, right: 20),
             child: Text(
               'Volunteer Details',
               style: TextStyle(
@@ -202,7 +202,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -225,7 +225,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -248,7 +248,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

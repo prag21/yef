@@ -46,9 +46,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Name'),
-                SizedBox(
-                  width: 99,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -72,9 +69,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Contact No'),
-                SizedBox(
-                  width: 65,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -98,9 +92,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Current Address'),
-                SizedBox(
-                  width: 35,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -126,9 +117,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Designation'),
-                SizedBox(
-                  width: 60,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -153,9 +141,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Problems Faced'),
-                SizedBox(
-                  width: 35,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -184,9 +169,6 @@ class _RapidResponseState extends State<RapidResponse> {
                     Text('Adhaar Card/'),
                     Text('Government ID'),
                   ],
-                ),
-                SizedBox(
-                  width: 45,
                 ),
                 Container(
                   height: 50,
@@ -225,9 +207,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Name'),
-                SizedBox(
-                  width: 99,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -251,9 +230,6 @@ class _RapidResponseState extends State<RapidResponse> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('Contact No'),
-                SizedBox(
-                  width: 65,
-                ),
                 Container(
                   height: 50,
                   width: 200,
@@ -281,9 +257,6 @@ class _RapidResponseState extends State<RapidResponse> {
                     Text('Adhaar Card/'),
                     Text('Government ID'),
                   ],
-                ),
-                SizedBox(
-                  width: 45,
                 ),
                 Container(
                   height: 50,

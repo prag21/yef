@@ -38,9 +38,7 @@ class _DonateState extends State<Donate> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: GestureDetector(
-          onTap: () {
-            open();
-          },
+          onTap: () {},
           child: Text('Donate Us'),
         ),
         centerTitle: true,
@@ -58,214 +56,43 @@ class _DonateState extends State<Donate> {
                   fontSize: 20),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 30),
-            child: Row(
-              children: [
-                Text(
-                  'Paytm',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                ),
-                SizedBox(width: 220),
-                GestureDetector(
-                  onTap: () {
-                    print('Hi');
-                  },
-                  child: CircleAvatar(
-                    backgroundColor: Colors.black,
-                    backgroundImage: AssetImage('assets/2.jpg'),
-                    radius: 30,
-                  ),
-                ),
-              ],
-            ),
+          ok('Paytm', 'assets/2.jpg'),
+          padd(),
+          ok('Google Pay', 'assets/1.jpg'),
+          padd(),
+          ok('Paypal', 'assets/3.jpg'),
+          padd(),
+          ok('Razorpay', 'assets/4.jpg'),
+          padd(),
+          ok('UPI', 'assets/5.jpg'),
+          padd(),
+          ok('Credit/Debit Card', 'assets/6.jpg'),
+          padd(),
+        ],
+      ),
+    );
+  }
+
+  ok(String text, String text1) {
+    return Padding(
+      padding: EdgeInsets.only(left: 40, top: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            text,
+            style: TextStyle(
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
           ),
-          SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 30),
-            child: Divider(
-              color: Colors.black54,
-              thickness: 2,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 10),
-            child: Row(
-              children: [
-                Text(
-                  'Google Pay',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                ),
-                SizedBox(width: 175),
-                GestureDetector(
-                  onTap: () {
-                    print('Hi');
-                  },
-                  child: CircleAvatar(
-                    backgroundColor: Colors.black,
-                    backgroundImage: AssetImage('assets/1.jpg'),
-                    radius: 30,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 30),
-            child: Divider(
-              color: Colors.black54,
-              thickness: 2,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 10),
-            child: Row(
-              children: [
-                Text(
-                  'Paypal',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                ),
-                SizedBox(width: 215),
-                GestureDetector(
-                  onTap: () {
-                    print('Hi');
-                  },
-                  child: CircleAvatar(
-                    backgroundColor: Colors.black,
-                    backgroundImage: AssetImage('assets/3.jpg'),
-                    radius: 30,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 30),
-            child: Divider(
-              color: Colors.black54,
-              thickness: 2,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 10),
-            child: Row(
-              children: [
-                Text(
-                  'RazorPay',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                ),
-                SizedBox(width: 190),
-                GestureDetector(
-                  onTap: () {
-                    print('Hi');
-                  },
-                  child: CircleAvatar(
-                    backgroundColor: Colors.black,
-                    backgroundImage: AssetImage('assets/4.jpg'),
-                    radius: 30,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 30),
-            child: Divider(
-              color: Colors.black54,
-              thickness: 2,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 10),
-            child: Row(
-              children: [
-                Text(
-                  'UPI',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                ),
-                SizedBox(width: 245),
-                GestureDetector(
-                  onTap: () {
-                    print('Hi');
-                  },
-                  child: CircleAvatar(
-                    backgroundColor: Colors.black,
-                    backgroundImage: AssetImage('assets/5.jpg'),
-                    radius: 30,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 30),
-            child: Divider(
-              color: Colors.black54,
-              thickness: 2,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 10),
-            child: Row(
-              children: [
-                Text(
-                  'Credit/Debit Card',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                ),
-                SizedBox(width: 120),
-                GestureDetector(
-                  onTap: () {
-                    print('Hi');
-                  },
-                  child: CircleAvatar(
-                    backgroundColor: Colors.black,
-                    backgroundImage: AssetImage('assets/6.jpg'),
-                    radius: 30,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 2,
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 30),
-            child: Divider(
-              color: Colors.black54,
-              thickness: 2,
+          GestureDetector(
+            onTap: () {},
+            child: Padding(
+              padding: EdgeInsets.only(right: 30),
+              child: CircleAvatar(
+                backgroundColor: Colors.black,
+                backgroundImage: AssetImage(text1),
+                radius: 30,
+              ),
             ),
           ),
         ],
@@ -273,8 +100,13 @@ class _DonateState extends State<Donate> {
     );
   }
 
-  open() async {
-    const url = 'https://www.yefindia.org/donate/';
-    launch(url);
+  padd() {
+    return Padding(
+      padding: EdgeInsets.only(left: 40, right: 30),
+      child: Divider(
+        color: Colors.black54,
+        thickness: 2,
+      ),
+    );
   }
 }

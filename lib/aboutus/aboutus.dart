@@ -37,143 +37,102 @@ class _AboutUsState extends State<AboutUs> {
       drawer: loggedin ? Drawer1() : Drawer2(),
       body: ListView(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 40),
-            child: Row(
-              children: [
-                Text(
-                  'Who are we?',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 150,
-                ),
-                !open
-                    ? IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_down_outlined,
-                          size: 30,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            open = true;
-                          });
-                        })
-                    : IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_up_outlined,
-                          size: 30,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            open = false;
-                          });
-                        }),
-              ],
-            ),
+          ok(
+            text: 'Who are we',
+            okay: open,
+            one: Whoarewe(),
+            two: Container(),
           ),
-          open ? Whoarewe() : Container(),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 38, top: 5),
-            child: Divider(
-              thickness: 1.5,
-              color: Colors.black87,
-            ),
+          padd(),
+          ok(
+            text: 'About our Founder',
+            okay: open1,
+            one: Founder(),
+            two: Container(),
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
-            child: Row(
-              children: [
-                Text(
-                  'About our founder',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 88,
-                ),
-                !open1
-                    ? IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_down_outlined,
-                          size: 30,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            open1 = true;
-                          });
-                        })
-                    : IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_up_outlined,
-                          size: 30,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            open1 = false;
-                          });
-                        }),
-              ],
-            ),
+          padd(),
+          ok(
+            text: 'Our Mission',
+            okay: open2,
+            one: Mission(),
+            two: Container(),
           ),
-          open1 ? Founder() : Container(),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 38, top: 5),
-            child: Divider(
-              thickness: 1.5,
-              color: Colors.black87,
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
-            child: Row(
-              children: [
-                Text(
-                  'Our Mission',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 156,
-                ),
-                !open2
-                    ? IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_down_outlined,
-                          size: 30,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            open2 = true;
-                          });
-                        })
-                    : IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_up_outlined,
-                          size: 30,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            open2 = false;
-                          });
-                        }),
-              ],
-            ),
-          ),
-          open2 ? Mission() : Container(),
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 38, top: 5),
-            child: Divider(
-              thickness: 1.5,
-              color: Colors.black87,
-            ),
-          ),
+          padd(),
         ],
       ),
+    );
+  }
+
+  Widget padd() {
+    return Padding(
+      padding: EdgeInsets.only(left: 40, right: 38, top: 5),
+      child: Divider(
+        thickness: 1.5,
+        color: Colors.black87,
+      ),
+    );
+  }
+}
+
+class ok extends StatefulWidget {
+  String text;
+  bool okay;
+  Widget one;
+  Widget two;
+  ok({this.text, this.okay = false, this.one, this.two});
+
+  @override
+  _okState createState() => _okState();
+}
+
+class _okState extends State<ok> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: EdgeInsets.only(left: 40, top: 40),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                widget.text,
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              ),
+              !widget.okay
+                  ? Padding(
+                      padding: EdgeInsets.only(right: 30),
+                      child: IconButton(
+                          icon: Icon(
+                            Icons.arrow_circle_down_outlined,
+                            size: 30,
+                            color: Colors.black,
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              widget.okay = true;
+                            });
+                          }),
+                    )
+                  : Padding(
+                      padding: EdgeInsets.only(right: 30),
+                      child: IconButton(
+                          icon: Icon(
+                            Icons.arrow_circle_up_outlined,
+                            size: 30,
+                            color: Colors.black,
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              widget.okay = false;
+                            });
+                          }),
+                    ),
+            ],
+          ),
+        ),
+        widget.okay ? widget.one : widget.two
+      ],
     );
   }
 }

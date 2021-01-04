@@ -34,76 +34,84 @@ class _GalleryState extends State<Gallery> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Picture(image: image)));
-            },
-            child: Container(
-              height: 100,
-              width: 90,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black, width: 2),
-                image: DecorationImage(
-                  image: AssetImage(image),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Picture(image: image1)));
-            },
-            child: Container(
-              height: 100,
-              width: 90,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black, width: 2),
-                image: DecorationImage(
-                  image: AssetImage(
-                    image1,
+          image != ''
+              ? GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Picture(image: image)));
+                  },
+                  child: Container(
+                    height: 100,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black, width: 2),
+                      image: DecorationImage(
+                        image: AssetImage(image),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Picture(image: image2)));
-            },
-            child: Container(
-              height: 100,
-              width: 90,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black, width: 2),
-                image: DecorationImage(
-                  image: AssetImage(image2),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Picture(image: image3)));
-            },
-            child: Container(
-              height: 100,
-              width: 90,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.black, width: 2),
-                image: DecorationImage(
-                  image: AssetImage(image3),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
+                )
+              : Container(),
+          image1 != ''
+              ? GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Picture(image: image1)));
+                  },
+                  child: Container(
+                    height: 100,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black, width: 2),
+                      image: DecorationImage(
+                        image: AssetImage(
+                          image1,
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                )
+              : Container(),
+          image2 != ''
+              ? GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Picture(image: image2)));
+                  },
+                  child: Container(
+                    height: 100,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black, width: 2),
+                      image: DecorationImage(
+                        image: AssetImage(image2),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                )
+              : Container(),
+          image3 != ''
+              ? GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => Picture(image: image3)));
+                  },
+                  child: Container(
+                    height: 100,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black, width: 2),
+                      image: DecorationImage(
+                        image: AssetImage(image3),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                )
+              : Container(),
         ],
       ),
     );

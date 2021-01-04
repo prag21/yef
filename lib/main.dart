@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:internship/drawer/loggedindrawer.dart';
 import 'package:internship/drawer/logindrawer.dart';
+import 'package:internship/events/gallery.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 

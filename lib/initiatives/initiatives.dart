@@ -9,17 +9,6 @@ class Initiatives extends StatefulWidget {
 
 class _InitiativesState extends State<Initiatives> {
   bool open = false;
-  bool open1 = false;
-  bool open2 = false;
-  bool open3 = false;
-  bool open4 = false;
-  bool open5 = false;
-  bool open6 = false;
-  bool open7 = false;
-  bool open8 = false;
-  bool open9 = false;
-  bool open10 = false;
-  bool open11 = false;
 
   bool loggedin = true;
   @override
@@ -57,7 +46,7 @@ add the number here) families till now and will be able to help many more with y
           padd(),
           ok(
             text: 'Project Milaap',
-            okay: open1,
+            okay: open,
             one: ok1(
               image1: 'assets/15.jpg',
               text:
@@ -71,7 +60,7 @@ helping the same for they need our help, and more importantly, your help.''',
           padd(),
           ok(
             text: 'Love in a Backpack',
-            okay: open2,
+            okay: open,
             one: ok1(
               image1: 'assets/16.jpg',
               text:
@@ -86,7 +75,7 @@ economic future, we distributed and donated books as well as food.''',
           padd(),
           ok(
             text: 'Hamari Pathshala',
-            okay: open3,
+            okay: open,
             one: ok1(
               image1: 'assets/17.jpg',
               text:
@@ -101,7 +90,7 @@ helped unlock their hidden potentials and helped them find their voice amongst t
           padd(),
           ok(
             text: 'Project Muskaan',
-            okay: open10,
+            okay: open,
             one: ok1(
               image1: 'assets/18.jpg',
               text:
@@ -116,7 +105,7 @@ several locations so they don’t have to suffer an ill fate.''',
           padd(),
           ok(
             text: 'Impact Academy',
-            okay: open4,
+            okay: open,
             one: ok1(
               image1: 'assets/19.jpg',
               text:
@@ -133,7 +122,7 @@ but untaught limb of today’s autonomy of jobs and businesses.''',
           padd(),
           ok(
             text: 'Project Lifeline',
-            okay: open5,
+            okay: open,
             one: ok1(
               image1: 'assets/20.jpg',
               text:
@@ -149,7 +138,7 @@ empower 10,000 children and this can only be made possible by your help.''',
           padd(),
           ok(
             text: 'Project Life of Hope',
-            okay: open6,
+            okay: open,
             one: ok1(
               image1: 'assets/25.jpg',
               text:
@@ -162,7 +151,7 @@ To empower her and inspire many widows who are good through a similar situation,
           padd(),
           ok(
             text: 'Care A Lot',
-            okay: open7,
+            okay: open,
             one: ok1(
               image1: 'assets/21.jpg',
               text:
@@ -175,7 +164,7 @@ There were many who supported this cause by donating their clothes, which has ch
           padd(),
           ok(
             text: 'LED Bulb Making',
-            okay: open8,
+            okay: open,
             one: ok1(
               text:
                   ''''We made an effort by giving LED bulb making training to young minds which helped them to go on with education and earn for their family requirements.''',
@@ -186,7 +175,7 @@ There were many who supported this cause by donating their clothes, which has ch
           padd(),
           ok(
             text: 'Computer Training Program',
-            okay: open9,
+            okay: open,
             one: ok1(
               text:
                   '''In this technology orientated world, one must have basic computer knowledge. The foundation has initiated Computer Training Programs to impart computer knowledge to young minds.''',
@@ -197,7 +186,7 @@ There were many who supported this cause by donating their clothes, which has ch
           padd(),
           ok(
             text: 'English Learning Program',
-            okay: open10,
+            okay: open,
             one: ok1(
               image1: 'assets/24.jpg',
               text:

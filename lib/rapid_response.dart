@@ -202,7 +202,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 20, top: 30, right: 30),
+            padding: EdgeInsets.only(left: 20, top: 30, right: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

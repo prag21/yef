@@ -84,7 +84,7 @@ Education is the manifestation of the perfection already in man. We have to stri
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(left: 40, right: 38, top: 5),
+      padding: EdgeInsets.only(left: 20, right: 30, top: 5),
       child: Divider(
         thickness: 1.5,
         color: Colors.black87,
@@ -110,17 +110,17 @@ class _okState extends State<ok> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 40, top: 40),
+          padding: EdgeInsets.only(left: 20, top: 40),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 widget.text,
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
               ),
               !widget.okay
                   ? Padding(
-                      padding: EdgeInsets.only(right: 30),
+                      padding: EdgeInsets.only(right: 20),
                       child: IconButton(
                           icon: Icon(
                             Icons.arrow_circle_down_outlined,
@@ -134,7 +134,7 @@ class _okState extends State<ok> {
                           }),
                     )
                   : Padding(
-                      padding: EdgeInsets.only(right: 30),
+                      padding: EdgeInsets.only(right: 20),
                       child: IconButton(
                           icon: Icon(
                             Icons.arrow_circle_up_outlined,
@@ -163,7 +163,7 @@ class Founder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 30),
+      padding: EdgeInsets.only(left: 10),
       child: image != ''
           ? Row(
               children: [

@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:internship/drawer/loggedindrawer.dart';
 import 'package:internship/drawer/logindrawer.dart';
-import 'package:internship/events/gallery.dart';
+import 'package:internship/events/socialwork.dart';
+import 'package:internship/learn/Videos/advanced.dart';
 
-import 'package:url_launcher/url_launcher.dart';
+import 'package:internship/learn/Videos/intermediate.dart';
+import 'package:internship/learn/podcasts/advanced.dart';
+
+import 'package:internship/learn/podcasts/intermediate.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Donate(),
+      home: Social(),
     );
   }
 }
@@ -57,17 +61,17 @@ class _DonateState extends State<Donate> {
                   fontSize: 20),
             ),
           ),
-          ok('Paytm', 'assets/2.jpg'),
+          ok('Paytm', 'assets/31.jpg'),
           padd(),
-          ok('Google Pay', 'assets/1.jpg'),
+          ok('Google Pay', 'assets/30.jpg'),
           padd(),
           ok('Paypal', 'assets/3.jpg'),
           padd(),
           ok('Razorpay', 'assets/4.jpg'),
           padd(),
-          ok('UPI', 'assets/5.jpg'),
+          ok('UPI', 'assets/32.jpg'),
           padd(),
-          ok('Credit/Debit Card', 'assets/6.jpg'),
+          ok('Credit/Debit Card', 'assets/33.jpg'),
           padd(),
         ],
       ),

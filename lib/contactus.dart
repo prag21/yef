@@ -31,7 +31,7 @@ class _ContactState extends State<Contact> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 30, top: 30),
+            padding: EdgeInsets.only(left: 5, top: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -54,7 +54,7 @@ class _ContactState extends State<Contact> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 10),
+                  padding: EdgeInsets.only(right: 5),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     color: Colors.blueAccent[400],
@@ -72,7 +72,7 @@ class _ContactState extends State<Contact> {
           ),
           padd(),
           Padding(
-            padding: EdgeInsets.only(left: 30, top: 30),
+            padding: EdgeInsets.only(left: 5, top: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -95,7 +95,7 @@ class _ContactState extends State<Contact> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 10),
+                  padding: EdgeInsets.only(right: 5),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     color: Colors.blueAccent[400],
@@ -113,7 +113,7 @@ class _ContactState extends State<Contact> {
           ),
           padd(),
           Padding(
-            padding: EdgeInsets.only(left: 30, top: 30),
+            padding: EdgeInsets.only(left: 5, top: 30),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -144,7 +144,7 @@ class _ContactState extends State<Contact> {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 10),
+                  padding: EdgeInsets.only(right: 5),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     color: Colors.blueAccent[400],
@@ -162,7 +162,7 @@ class _ContactState extends State<Contact> {
           ),
           padd(),
           Padding(
-            padding: EdgeInsets.only(left: 30, top: 20),
+            padding: EdgeInsets.only(left: 5, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -171,7 +171,7 @@ class _ContactState extends State<Contact> {
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 10),
+                  padding: EdgeInsets.only(right: 5),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 45),
                     shape: RoundedRectangleBorder(
@@ -195,7 +195,7 @@ class _ContactState extends State<Contact> {
 
   padd() {
     return Padding(
-      padding: EdgeInsets.only(left: 30, right: 10, top: 20),
+      padding: EdgeInsets.only(left: 5, right: 10, top: 20),
       child: Divider(
         color: Colors.black54,
         thickness: 2,

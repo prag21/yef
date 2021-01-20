@@ -452,14 +452,14 @@ Only those candidates can apply who:
 
   Widget all(String text, Widget ok) {
     return Padding(
-      padding: EdgeInsets.only(top: 20, left: 10),
+      padding: EdgeInsets.only(top: 20, left: 3),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(text,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
           Padding(
-            padding: EdgeInsets.only(right: 10),
+            padding: EdgeInsets.only(right: 5),
             child: Container(
               height: 20,
               width: 20,
@@ -489,7 +489,7 @@ Only those candidates can apply who:
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+      padding: EdgeInsets.only(left: 3, right: 3, top: 5),
       child: Divider(
         thickness: 1.5,
         color: Colors.black87,
@@ -528,7 +528,8 @@ class _okState extends State<ok> {
           Padding(
             padding: EdgeInsets.only(left: 30, top: 30),
             child: Text(widget.title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                maxLines: 2,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10)),
           ),
           Padding(
             padding: EdgeInsets.only(left: 30, top: 20),
@@ -606,7 +607,7 @@ class _okState extends State<ok> {
           Padding(
             padding: EdgeInsets.only(left: 30, top: 5, right: 50),
             child: Container(
-              height: 150,
+              height: 160,
               width: 100,
               child: Text(widget.apply),
             ),

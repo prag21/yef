@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:internship/drawer/loggedindrawer.dart';
 import 'package:internship/drawer/logindrawer.dart';
 
-class Advanced extends StatefulWidget {
+class Advanced1 extends StatefulWidget {
   @override
-  _AdvancedState createState() => _AdvancedState();
+  _Advanced1State createState() => _Advanced1State();
 }
 
-class _AdvancedState extends State<Advanced> {
+class _Advanced1State extends State<Advanced1> {
   bool loggedin = true;
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class _AdvancedState extends State<Advanced> {
 
   Widget ok(String text1) {
     return Padding(
-      padding: EdgeInsets.only(left: 20, top: 20),
+      padding: EdgeInsets.only(left: 10, top: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -49,7 +49,7 @@ class _AdvancedState extends State<Advanced> {
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
           Padding(
-            padding: EdgeInsets.only(right: 20),
+            padding: EdgeInsets.only(right: 10),
             child: RaisedButton(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               shape: RoundedRectangleBorder(
@@ -70,7 +70,7 @@ class _AdvancedState extends State<Advanced> {
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+      padding: EdgeInsets.only(top: 5, left: 20, right: 10),
       child: Divider(
         color: Colors.black87,
         thickness: 1.5,

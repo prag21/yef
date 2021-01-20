@@ -21,14 +21,14 @@ class _ApplyState extends State<Apply> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 40),
+            padding: EdgeInsets.only(left: 20, top: 40),
             child: Text(
               'Why do you want to be hired for this internship?',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20, right: 20),
+            padding: EdgeInsets.only(left: 20, top: 20, right: 20),
             child: Theme(
               data: ThemeData(
                 primaryColor: Colors.black,
@@ -47,14 +47,14 @@ class _ApplyState extends State<Apply> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 40),
+            padding: EdgeInsets.only(left: 20, top: 40),
             child: Text(
               'Are you available for 1 month',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20, right: 20),
+            padding: EdgeInsets.only(left: 20, top: 20, right: 20),
             child: Theme(
               data: ThemeData(
                 primaryColor: Colors.black,
@@ -70,14 +70,14 @@ class _ApplyState extends State<Apply> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 40),
+            padding: EdgeInsets.only(left: 20, top: 40),
             child: Text(
               'What skills are you well versed with for this internship?',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20, right: 20),
+            padding: EdgeInsets.only(left: 20, top: 20, right: 20),
             child: Theme(
               data: ThemeData(
                 primaryColor: Colors.black,

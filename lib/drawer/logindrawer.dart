@@ -37,10 +37,10 @@ class _Drawer2State extends State<Drawer2> {
                 Text('Collaborate',
                     style: TextStyle(fontSize: 24, color: Colors.black87)),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {})
               ],
@@ -61,10 +61,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
@@ -88,10 +88,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -115,10 +115,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {})
               ],
@@ -139,10 +139,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {})
               ],
@@ -163,10 +163,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
@@ -190,10 +190,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
@@ -217,10 +217,10 @@ class _Drawer2State extends State<Drawer2> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(

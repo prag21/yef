@@ -202,7 +202,7 @@ There were many who supported this cause by donating their clothes, which has ch
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(left: 40, right: 40),
+      padding: EdgeInsets.only(left: 20, right: 30),
       child: Divider(
         thickness: 1.5,
         color: Colors.black87,
@@ -227,7 +227,7 @@ class _okState extends State<ok> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 40, left: 40),
+          padding: EdgeInsets.only(top: 40, left: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -237,7 +237,7 @@ class _okState extends State<ok> {
               ),
               widget.okay
                   ? Padding(
-                      padding: EdgeInsets.only(right: 30),
+                      padding: EdgeInsets.only(right: 20),
                       child: IconButton(
                         icon: Icon(
                           Icons.arrow_circle_up_outlined,
@@ -250,7 +250,7 @@ class _okState extends State<ok> {
                         },
                       ))
                   : Padding(
-                      padding: EdgeInsets.only(right: 30),
+                      padding: EdgeInsets.only(right: 20),
                       child: IconButton(
                         icon: Icon(
                           Icons.arrow_circle_down_outlined,
@@ -278,7 +278,7 @@ class ok1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 30, top: 10),
+      padding: EdgeInsets.only(left: 10, top: 10),
       child: Row(
         children: [
           Container(

@@ -21,7 +21,7 @@ class _SocialState extends State<Social> {
       body: ListView(
         children: [
           ok('assets/100.jpg', 'Dipa,Sunita,Pushpa', 'Lucknow',
-              '''Deepa is a 4th class employee(sweeper) in a private school.Her husband used to work at a food shop but he lost his job during lockdown and was not able to raise single penny for his family, they are deprived of money and facilities to earn their daily bread,On getting to know about them we delivered all the essentials items to them so that they can feed themselves.''')
+              '''Deepa is a 4th class employee(sweeper) in a private school.Her husband used to work at a food shop but he lost his job during lockdown and was not able to raise single penny for his family, they are deprived of money and facilities to earn their daily bread.On getting to know about them we delivered all the essentials items to them so that they can feed themselves.''')
         ],
       ),
     );
@@ -29,13 +29,12 @@ class _SocialState extends State<Social> {
 
   Widget ok(String text, String text1, String text2, String text3) {
     return Padding(
-      padding: EdgeInsets.only(left: 5, top: 20, right: 5),
+      padding: EdgeInsets.only(left: 1, top: 20, right: 3),
       child: Container(
         height: 200,
-        width: 120,
         decoration: BoxDecoration(
-          color: Colors.grey[400],
           borderRadius: BorderRadius.circular(10.0),
+          color: Colors.grey[200],
         ),
         child: Row(
           children: [
@@ -44,7 +43,7 @@ class _SocialState extends State<Social> {
               radius: 56,
               child: ClipOval(
                 child: SizedBox(
-                  height: 120,
+                  height: 170,
                   width: 80,
                   child: Image(
                     image: AssetImage(text),
@@ -54,7 +53,7 @@ class _SocialState extends State<Social> {
               ),
             ),
             SizedBox(
-              width: 20,
+              width: 5,
             ),
             Padding(
               padding: EdgeInsets.only(top: 5),
@@ -77,7 +76,7 @@ class _SocialState extends State<Social> {
                   ),
                   Container(
                     height: 150,
-                    width: 260,
+                    width: 283,
                     child: Text(text3, maxLines: 10),
                   ),
                 ],

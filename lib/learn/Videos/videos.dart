@@ -24,7 +24,7 @@ class _VideosState extends State<Videos> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
+            padding: EdgeInsets.only(left: 10, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -38,7 +38,7 @@ class _VideosState extends State<Videos> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
@@ -47,7 +47,7 @@ class _VideosState extends State<Videos> {
                     color: Colors.blueAccent[400],
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Basic()));
+                          MaterialPageRoute(builder: (context) => Basic1()));
                     },
                     child: Text(
                       'View',
@@ -59,14 +59,14 @@ class _VideosState extends State<Videos> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+            padding: EdgeInsets.only(top: 5, left: 20, right: 10),
             child: Divider(
               color: Colors.black87,
               thickness: 1.5,
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
+            padding: EdgeInsets.only(left: 10, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -80,7 +80,7 @@ class _VideosState extends State<Videos> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
@@ -89,7 +89,7 @@ class _VideosState extends State<Videos> {
                     color: Colors.blueAccent[400],
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => Intermediate()));
+                          builder: (context) => Intermediate1()));
                     },
                     child: Text(
                       'View',
@@ -101,14 +101,14 @@ class _VideosState extends State<Videos> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+            padding: EdgeInsets.only(top: 5, left: 20, right: 10),
             child: Divider(
               color: Colors.black87,
               thickness: 1.5,
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
+            padding: EdgeInsets.only(left: 10, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -122,7 +122,7 @@ class _VideosState extends State<Videos> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
@@ -131,7 +131,7 @@ class _VideosState extends State<Videos> {
                     color: Colors.blueAccent[400],
                     onPressed: () {
                       Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Advanced()));
+                          MaterialPageRoute(builder: (context) => Advanced1()));
                     },
                     child: Text(
                       'View',
@@ -143,7 +143,7 @@ class _VideosState extends State<Videos> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+            padding: EdgeInsets.only(top: 5, left: 20, right: 10),
             child: Divider(
               color: Colors.black87,
               thickness: 1.5,

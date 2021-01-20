@@ -47,10 +47,10 @@ class _Drawer1State extends State<Drawer1> {
                 Text('Collaborate',
                     style: TextStyle(fontSize: 24, color: Colors.black87)),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       setState(() {});
@@ -73,10 +73,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
@@ -102,10 +102,10 @@ class _Drawer1State extends State<Drawer1> {
                   ),
                 ),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -129,10 +129,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -156,10 +156,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {})
               ],
@@ -180,10 +180,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {})
               ],
@@ -204,10 +204,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
@@ -231,10 +231,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(
@@ -258,10 +258,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
@@ -285,10 +285,10 @@ class _Drawer1State extends State<Drawer1> {
                       color: Colors.black87,
                     )),
                 IconButton(
-                    padding: EdgeInsets.only(right: 60),
+                    padding: EdgeInsets.only(right: 30),
                     icon: Icon(
                       Icons.arrow_forward_ios_outlined,
-                      size: 24,
+                      size: 22,
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(

@@ -35,7 +35,7 @@ class _WebinarState extends State<Webinar> {
 
   Widget ok(String text1, String text2) {
     return Padding(
-      padding: EdgeInsets.only(left: 40, top: 20),
+      padding: EdgeInsets.only(left: 10, top: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -58,7 +58,7 @@ class _WebinarState extends State<Webinar> {
             ],
           ),
           Padding(
-            padding: EdgeInsets.only(right: 20),
+            padding: EdgeInsets.only(right: 10),
             child: RaisedButton(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               shape: RoundedRectangleBorder(
@@ -79,7 +79,7 @@ class _WebinarState extends State<Webinar> {
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+      padding: EdgeInsets.only(top: 5, left: 20, right: 10),
       child: Divider(
         color: Colors.black87,
         thickness: 1.5,

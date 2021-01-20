@@ -40,7 +40,7 @@ class _ApplicationsState extends State<Applications> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Padding(
-          padding: EdgeInsets.only(left: 30, top: 30),
+          padding: EdgeInsets.only(left: 10, top: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -78,7 +78,7 @@ class _ApplicationsState extends State<Applications> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 15, right: 10),
+          padding: EdgeInsets.only(top: 30, right: 5),
           child: Column(
             children: [
               CircleAvatar(
@@ -114,7 +114,7 @@ class _ApplicationsState extends State<Applications> {
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(left: 30, right: 15, top: 5),
+      padding: EdgeInsets.only(left: 10, right: 5, top: 5),
       child: Divider(
         thickness: 1.5,
         color: Colors.black87,

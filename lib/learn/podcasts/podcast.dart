@@ -24,7 +24,7 @@ class _PodcastState extends State<Podcast> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
+            padding: EdgeInsets.only(left: 10, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -38,7 +38,7 @@ class _PodcastState extends State<Podcast> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
@@ -59,14 +59,14 @@ class _PodcastState extends State<Podcast> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+            padding: EdgeInsets.only(top: 5, left: 20, right: 10),
             child: Divider(
               color: Colors.black87,
               thickness: 1.5,
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
+            padding: EdgeInsets.only(left: 10, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -80,7 +80,7 @@ class _PodcastState extends State<Podcast> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
@@ -101,14 +101,14 @@ class _PodcastState extends State<Podcast> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+            padding: EdgeInsets.only(top: 5, left: 20, right: 10),
             child: Divider(
               color: Colors.black87,
               thickness: 1.5,
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 40, top: 20),
+            padding: EdgeInsets.only(left: 10, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -122,7 +122,7 @@ class _PodcastState extends State<Podcast> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: EdgeInsets.only(right: 10),
                   child: RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
@@ -143,7 +143,7 @@ class _PodcastState extends State<Podcast> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 5, left: 40, right: 20),
+            padding: EdgeInsets.only(top: 5, left: 20, right: 10),
             child: Divider(
               color: Colors.black87,
               thickness: 1.5,

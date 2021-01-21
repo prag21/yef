@@ -20,7 +20,7 @@ class _SocialState extends State<Social> {
       drawer: loggedin ? Drawer1() : Drawer2(),
       body: ListView(
         children: [
-          ok('assets/100.jpg', 'Dipa,Sunita,Pushpa', 'Lucknow',
+          ok('assets/100.jpg', 'Deepa', 'Lucknow',
               '''Deepa is a 4th class employee(sweeper) in a private school.Her husband used to work at a food shop but he lost his job during lockdown and was not able to raise single penny for his family, they are deprived of money and facilities to earn their daily bread.On getting to know about them we delivered all the essentials items to them so that they can feed themselves.''')
         ],
       ),
@@ -29,56 +29,51 @@ class _SocialState extends State<Social> {
 
   Widget ok(String text, String text1, String text2, String text3) {
     return Padding(
-      padding: EdgeInsets.only(left: 1, top: 20, right: 3),
+      padding: EdgeInsets.only(left: 1, top: 20, right: 1),
       child: Container(
-        height: 200,
+        height: MediaQuery.of(context).size.height / 3.7,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0),
-          color: Colors.grey[200],
+          color: Colors.grey[300],
+          borderRadius: BorderRadius.circular(7.0),
         ),
         child: Row(
           children: [
-            CircleAvatar(
-              backgroundColor: Colors.black38,
-              radius: 56,
-              child: ClipOval(
-                child: SizedBox(
-                  height: 170,
-                  width: 80,
-                  child: Image(
-                    image: AssetImage(text),
-                    fit: BoxFit.cover,
-                  ),
+            ClipOval(
+              child: SizedBox(
+                width: 120,
+                height: 160,
+                child: Image(
+                  image: AssetImage(text),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
-            SizedBox(
-              width: 5,
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 5),
+            SizedBox(width: 2),
+            Container(
+              width: 283,
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    text1,
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                  ),
                   SizedBox(
-                    height: 5,
+                    height: 4,
+                  ),
+                  Text(text1,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                  SizedBox(
+                    height: 2,
                   ),
                   Text(
                     text2,
                     style: TextStyle(fontWeight: FontWeight.w500),
                   ),
                   SizedBox(
-                    height: 5,
+                    height: 2,
                   ),
-                  Container(
-                    height: 150,
-                    width: 283,
-                    child: Text(text3, maxLines: 10),
-                  ),
+                  Text(text3),
                 ],
               ),
             ),

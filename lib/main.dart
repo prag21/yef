@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'package:internship/drawer/loggedindrawer.dart';
 import 'package:internship/drawer/logindrawer.dart';
+import 'package:internship/events/competitons.dart';
 import 'package:internship/events/socialwork.dart';
 import 'package:internship/learn/Videos/advanced.dart';
 
 import 'package:internship/learn/Videos/intermediate.dart';
+import 'package:internship/learn/Videos/videos.dart';
 import 'package:internship/learn/podcasts/advanced.dart';
 
 import 'package:internship/learn/podcasts/intermediate.dart';
+import 'package:internship/learn/podcasts/podcast.dart';
 
 void main() {
   runApp(MyApp());

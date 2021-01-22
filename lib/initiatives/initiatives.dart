@@ -228,41 +228,46 @@ class _okState extends State<ok> {
       children: [
         Padding(
           padding: EdgeInsets.only(top: 40, left: 20),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                widget.text,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              widget.okay
-                  ? Padding(
-                      padding: EdgeInsets.only(right: 20),
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_up_outlined,
-                          size: 28,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            widget.okay = false;
-                          });
-                        },
-                      ))
-                  : Padding(
-                      padding: EdgeInsets.only(right: 20),
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.arrow_circle_down_outlined,
-                          size: 28,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            widget.okay = true;
-                          });
-                        },
-                      )),
-            ],
+          child: Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width / 1.5,
+                  child: Text(
+                    widget.text,
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                widget.okay
+                    ? Padding(
+                        padding: EdgeInsets.only(right: 20),
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.arrow_circle_up_outlined,
+                            size: 28,
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              widget.okay = false;
+                            });
+                          },
+                        ))
+                    : Padding(
+                        padding: EdgeInsets.only(right: 20),
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.arrow_circle_down_outlined,
+                            size: 28,
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              widget.okay = true;
+                            });
+                          },
+                        )),
+              ],
+            ),
           ),
         ),
         widget.okay ? widget.one : widget.two,
@@ -282,8 +287,8 @@ class ok1 extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            height: 470,
-            width: 10,
+            width: MediaQuery.of(context).size.width / 20,
+            height: 1,
             child: VerticalDivider(
               thickness: 1.5,
               color: Colors.black87,
@@ -293,13 +298,12 @@ class ok1 extends StatelessWidget {
             width: 10,
           ),
           Container(
-            height: 470,
-            width: 300,
+            width: MediaQuery.of(context).size.width / 1.2,
             child: Column(
               children: [
                 Container(
-                  height: 200,
-                  width: 300,
+                  height: MediaQuery.of(context).size.height / 4,
+                  width: MediaQuery.of(context).size.width / 1.2,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(image1),
@@ -310,8 +314,6 @@ class ok1 extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-                  height: 260,
-                  width: 300,
                   child: Text(
                     text,
                     style: TextStyle(fontWeight: FontWeight.w500),

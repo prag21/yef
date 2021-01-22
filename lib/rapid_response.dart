@@ -31,7 +31,7 @@ class _RapidResponseState extends State<RapidResponse> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30),
+            padding: EdgeInsets.only(left: 10, top: 30),
             child: Text(
               'Beneficiary Details',
               style: TextStyle(
@@ -41,14 +41,19 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Name'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Text(
+                    'Name',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -64,14 +69,19 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Contact No'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Text(
+                    'Contact No',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -87,14 +97,19 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Current Address'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 3.9,
+                  child: Text(
+                    'Current Address',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -105,21 +120,26 @@ class _RapidResponseState extends State<RapidResponse> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20.0)),
                     ),
-                    maxLines: 6,
+                    maxLines: 3,
                   ),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Designation'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Text(
+                    'Designation',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -130,20 +150,26 @@ class _RapidResponseState extends State<RapidResponse> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20.0)),
                     ),
+                    maxLines: 3,
                   ),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Problems Faced'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Text(
+                    'Problems Faced',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -160,19 +186,23 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
-                    Text('Adhaar Card/'),
-                    Text('Government ID'),
+                    Container(
+                      width: MediaQuery.of(context).size.width / 4,
+                      child: Text(
+                        'Adhaar Card/Government ID',
+                        style: TextStyle(fontWeight: FontWeight.w800),
+                      ),
+                    ),
                   ],
                 ),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -192,7 +222,7 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 40, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 40, right: 10),
             child: Text(
               'Volunteer Details',
               style: TextStyle(
@@ -202,14 +232,19 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Name'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Text(
+                    'Name',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -225,14 +260,19 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Contact No'),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 4,
+                  child: Text(
+                    'Contact No',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -248,19 +288,23 @@ class _RapidResponseState extends State<RapidResponse> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30, right: 5),
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
-                    Text('Adhaar Card/'),
-                    Text('Government ID'),
+                    Container(
+                      width: MediaQuery.of(context).size.width / 4,
+                      child: Text(
+                        'Adhaar Card/Government ID',
+                        style: TextStyle(fontWeight: FontWeight.w800),
+                      ),
+                    ),
                   ],
                 ),
                 Container(
-                  height: 50,
-                  width: 200,
+                  width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),

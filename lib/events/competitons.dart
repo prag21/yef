@@ -35,31 +35,30 @@ class _CompeteState extends State<Compete> {
 
   Widget ok(String text1, String text2) {
     return Padding(
-      padding: EdgeInsets.only(left: 10, top: 20),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          CircleAvatar(
-            backgroundColor: Colors.white,
-            backgroundImage: AssetImage('assets/12.png'),
-            radius: 45,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                text1,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              SizedBox(
-                height: 5,
-              ),
-              Text(text2),
-            ],
-          ),
-          Padding(
-            padding: EdgeInsets.only(right: 10),
-            child: RaisedButton(
+      padding: EdgeInsets.only(left: 10, top: 20, right: 10),
+      child: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            CircleAvatar(
+              backgroundColor: Colors.white,
+              backgroundImage: AssetImage('assets/12.png'),
+              radius: 45,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  text1,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(text2),
+              ],
+            ),
+            RaisedButton(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),
@@ -71,8 +70,8 @@ class _CompeteState extends State<Compete> {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

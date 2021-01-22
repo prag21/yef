@@ -31,31 +31,30 @@ class _ContactState extends State<Contact> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(
-                  Icons.mail_outline,
-                  size: 50,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Email',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('contact@yefindia.org'),
-                  ],
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 5),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(
+                    Icons.mail_outline,
+                    size: 50,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Email',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text('contact@yefindia.org'),
+                    ],
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     color: Colors.blueAccent[400],
                     shape: RoundedRectangleBorder(
@@ -66,37 +65,36 @@ class _ContactState extends State<Contact> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           padd(),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(
-                  Icons.phone,
-                  size: 50,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Contact Number',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('+91 9311698690'),
-                  ],
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 5),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(
+                    Icons.phone,
+                    size: 50,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Contact Number',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text('+91 9311698690'),
+                    ],
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     color: Colors.blueAccent[400],
                     shape: RoundedRectangleBorder(
@@ -107,45 +105,44 @@ class _ContactState extends State<Contact> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           padd(),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(
-                  Icons.location_on_outlined,
-                  size: 50,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Location',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Location 2949,'),
-                        Text('Sant Nagar'),
-                        Text('Rani Bagh,Pitam Pura'),
-                        Text('Delhi,110034'),
-                      ],
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 5),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, right: 10, top: 30),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(
+                    Icons.location_on_outlined,
+                    size: 50,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Location',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Location 2949,'),
+                          Text('Sant Nagar'),
+                          Text('Rani Bagh,Pitam Pura'),
+                          Text('Delhi,110034'),
+                        ],
+                      ),
+                    ],
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     color: Colors.blueAccent[400],
                     shape: RoundedRectangleBorder(
@@ -156,23 +153,22 @@ class _ContactState extends State<Contact> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           padd(),
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Get In Touch With Us',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 5),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, right: 10, top: 20),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Get In Touch With Us',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 45),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)),
@@ -184,8 +180,8 @@ class _ContactState extends State<Contact> {
                     ),
                     onPressed: () {},
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],

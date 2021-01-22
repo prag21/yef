@@ -111,43 +111,48 @@ class _okState extends State<ok> {
       children: [
         Padding(
           padding: EdgeInsets.only(left: 20, top: 40),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                widget.text,
-                style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
-              ),
-              !widget.okay
-                  ? Padding(
-                      padding: EdgeInsets.only(right: 20),
-                      child: IconButton(
-                          icon: Icon(
-                            Icons.arrow_circle_down_outlined,
-                            size: 30,
-                            color: Colors.black,
-                          ),
-                          onPressed: () {
-                            setState(() {
-                              widget.okay = true;
-                            });
-                          }),
-                    )
-                  : Padding(
-                      padding: EdgeInsets.only(right: 20),
-                      child: IconButton(
-                          icon: Icon(
-                            Icons.arrow_circle_up_outlined,
-                            size: 30,
-                            color: Colors.black,
-                          ),
-                          onPressed: () {
-                            setState(() {
-                              widget.okay = false;
-                            });
-                          }),
-                    ),
-            ],
+          child: Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width / 1.5,
+                  child: Text(
+                    widget.text,
+                    style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                !widget.okay
+                    ? Padding(
+                        padding: EdgeInsets.only(right: 20),
+                        child: IconButton(
+                            icon: Icon(
+                              Icons.arrow_circle_down_outlined,
+                              size: 30,
+                              color: Colors.black,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                widget.okay = true;
+                              });
+                            }),
+                      )
+                    : Padding(
+                        padding: EdgeInsets.only(right: 20),
+                        child: IconButton(
+                            icon: Icon(
+                              Icons.arrow_circle_up_outlined,
+                              size: 30,
+                              color: Colors.black,
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                widget.okay = false;
+                              });
+                            }),
+                      ),
+              ],
+            ),
           ),
         ),
         widget.okay ? widget.one : widget.two
@@ -168,8 +173,7 @@ class Founder extends StatelessWidget {
           ? Row(
               children: [
                 Container(
-                  height: 750,
-                  width: 10,
+                  width: MediaQuery.of(context).size.width / 20,
                   child: VerticalDivider(
                     color: Colors.black,
                     thickness: 1.5,
@@ -198,8 +202,7 @@ class Founder extends StatelessWidget {
                       height: 10,
                     ),
                     Container(
-                      height: 630,
-                      width: 320,
+                      width: MediaQuery.of(context).size.width / 1.2,
                       child: Text(
                         text,
                         style: TextStyle(fontWeight: FontWeight.w500),
@@ -209,28 +212,29 @@ class Founder extends StatelessWidget {
                 )
               ],
             )
-          : Row(
-              children: [
-                Container(
-                  height: 450,
-                  width: 10,
-                  child: VerticalDivider(
-                    color: Colors.black,
-                    thickness: 1.5,
+          : Container(
+              child: Row(
+                children: [
+                  Container(
+                    color: Colors.red,
+                    width: MediaQuery.of(context).size.width / 20,
+                    child: VerticalDivider(
+                      color: Colors.black,
+                      thickness: 1.5,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  height: 450,
-                  width: 320,
-                  child: Text(
-                    text,
-                    style: TextStyle(fontWeight: FontWeight.w500),
+                  SizedBox(
+                    width: 10,
                   ),
-                ),
-              ],
+                  Container(
+                    width: MediaQuery.of(context).size.width / 1.2,
+                    child: Text(
+                      text,
+                      style: TextStyle(fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                ],
+              ),
             ),
     );
   }

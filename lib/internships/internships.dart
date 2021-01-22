@@ -452,44 +452,49 @@ Only those candidates can apply who:
 
   Widget all(String text, Widget ok) {
     return Padding(
-      padding: EdgeInsets.only(top: 20, left: 3),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(text,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
-          Padding(
-            padding: EdgeInsets.only(right: 5),
-            child: Container(
-              height: 20,
-              width: 20,
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.white,
-                  border: Border.all(color: Colors.black, width: 2)),
-              child: Center(
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (context) => ok));
-                  },
-                  child: Icon(
-                    Icons.arrow_right,
-                    color: Colors.black,
-                    size: 17,
+      padding: EdgeInsets.only(top: 20, left: 10, right: 10),
+      child: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width / 1.2,
+              child: Text(text,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 5),
+              child: Container(
+                height: 20,
+                width: 20,
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black, width: 2)),
+                child: Center(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) => ok));
+                    },
+                    child: Icon(
+                      Icons.arrow_right,
+                      color: Colors.black,
+                      size: 17,
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
 
   Widget padd() {
     return Padding(
-      padding: EdgeInsets.only(left: 3, right: 3, top: 5),
+      padding: EdgeInsets.only(left: 10, right: 10, top: 5),
       child: Divider(
         thickness: 1.5,
         color: Colors.black87,
@@ -539,8 +544,6 @@ class _okState extends State<ok> {
           Padding(
             padding: EdgeInsets.only(left: 30, top: 10, right: 50),
             child: Container(
-              height: 130,
-              width: 100,
               child: Text(widget.about),
             ),
           ),
@@ -555,12 +558,10 @@ class _okState extends State<ok> {
               ? Padding(
                   padding: EdgeInsets.only(left: 30, top: 5, right: 50),
                   child: Container(
-                      height: 190,
-                      width: 100,
                       child: Text(
-                        widget.note,
-                        style: TextStyle(fontWeight: FontWeight.w900),
-                      )),
+                    widget.note,
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  )),
                 )
               : Container(),
           widget.skill != ''
@@ -574,11 +575,9 @@ class _okState extends State<ok> {
               ? Padding(
                   padding: EdgeInsets.only(left: 30, top: 5, right: 50),
                   child: Container(
-                      height: 45,
-                      width: 100,
                       child: Text(
-                        widget.skill,
-                      )),
+                    widget.skill,
+                  )),
                 )
               : Container(),
           widget.learning != ''
@@ -592,11 +591,9 @@ class _okState extends State<ok> {
               ? Padding(
                   padding: EdgeInsets.only(left: 30, top: 5, right: 50),
                   child: Container(
-                      height: 45,
-                      width: 100,
                       child: Text(
-                        widget.learning,
-                      )),
+                    widget.learning,
+                  )),
                 )
               : Container(),
           Padding(
@@ -607,8 +604,6 @@ class _okState extends State<ok> {
           Padding(
             padding: EdgeInsets.only(left: 30, top: 5, right: 50),
             child: Container(
-              height: 160,
-              width: 100,
               child: Text(widget.apply),
             ),
           ),
@@ -619,8 +614,6 @@ class _okState extends State<ok> {
           Padding(
             padding: EdgeInsets.only(left: 30, top: 5, right: 50),
             child: Container(
-              height: 30,
-              width: 100,
               child: Text(
                 widget.perk,
               ),

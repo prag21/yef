@@ -24,22 +24,21 @@ class _PodcastState extends State<Podcast> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 10, top: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  backgroundImage: AssetImage('assets/12.png'),
-                  radius: 45,
-                ),
-                Text(
-                  'Basic',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 10),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, top: 20, right: 10),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    backgroundImage: AssetImage('assets/12.png'),
+                    radius: 45,
+                  ),
+                  Text(
+                    'Basic',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
@@ -54,8 +53,8 @@ class _PodcastState extends State<Podcast> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Padding(
@@ -66,22 +65,21 @@ class _PodcastState extends State<Podcast> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 10, top: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  backgroundImage: AssetImage('assets/12.png'),
-                  radius: 45,
-                ),
-                Text(
-                  'Intermediate',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 10),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, top: 20, right: 10),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    backgroundImage: AssetImage('assets/12.png'),
+                    radius: 45,
+                  ),
+                  Text(
+                    'Intermediate',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
@@ -96,8 +94,8 @@ class _PodcastState extends State<Podcast> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Padding(
@@ -108,22 +106,21 @@ class _PodcastState extends State<Podcast> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 10, top: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CircleAvatar(
-                  backgroundColor: Colors.white,
-                  backgroundImage: AssetImage('assets/12.png'),
-                  radius: 45,
-                ),
-                Text(
-                  'Advanced',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 10),
-                  child: RaisedButton(
+            padding: EdgeInsets.only(left: 10, top: 20, right: 10),
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    backgroundImage: AssetImage('assets/12.png'),
+                    radius: 45,
+                  ),
+                  Text(
+                    'Advanced',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
@@ -138,8 +135,8 @@ class _PodcastState extends State<Podcast> {
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Padding(

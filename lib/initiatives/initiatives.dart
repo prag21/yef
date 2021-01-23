@@ -284,45 +284,38 @@ class ok1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(left: 10, top: 10),
-      child: Row(
-        children: [
-          Container(
-            width: MediaQuery.of(context).size.width / 20,
-            height: 1,
-            child: VerticalDivider(
-              thickness: 1.5,
-              color: Colors.black87,
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border(
+            left: BorderSide(width: 1.5),
+          ),
+        ),
+        width: MediaQuery.of(context).size.width / 1.07,
+        child: Column(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height / 4,
+              width: MediaQuery.of(context).size.width / 1.2,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(image1),
+                ),
+              ),
             ),
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          Container(
-            width: MediaQuery.of(context).size.width / 1.2,
-            child: Column(
-              children: [
-                Container(
-                  height: MediaQuery.of(context).size.height / 4,
-                  width: MediaQuery.of(context).size.width / 1.2,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage(image1),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: Text(
-                    text,
-                    style: TextStyle(fontWeight: FontWeight.w500),
-                  ),
-                ),
-              ],
+            SizedBox(
+              height: 10,
             ),
-          ),
-        ],
+            Padding(
+              padding: EdgeInsets.only(left: 10, right: 30),
+              child: Container(
+                child: Text(
+                  text,
+                  style: TextStyle(fontWeight: FontWeight.w500),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

@@ -40,19 +40,21 @@ class _ContactState extends State<Contact> {
                     Icons.mail_outline,
                     size: 50,
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Email',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text('contact@yefindia.org'),
-                    ],
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Email',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text('contact@yefindia.org'),
+                      ],
+                    ),
                   ),
                   RaisedButton(
                     padding: EdgeInsets.symmetric(horizontal: 40),

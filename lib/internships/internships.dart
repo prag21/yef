@@ -531,10 +531,12 @@ class _okState extends State<ok> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 30, top: 30),
-            child: Text(widget.title,
-                maxLines: 2,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10)),
+            padding: EdgeInsets.only(left: 30, top: 30, right: 10),
+            child: Container(
+              child: Text(widget.title,
+                  maxLines: 2,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+            ),
           ),
           Padding(
             padding: EdgeInsets.only(left: 30, top: 20),

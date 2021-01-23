@@ -9,6 +9,15 @@ class RapidResponse extends StatefulWidget {
 }
 
 class _RapidResponseState extends State<RapidResponse> {
+  TextEditingController username;
+  TextEditingController phone;
+  TextEditingController address;
+  TextEditingController designation;
+  TextEditingController problems;
+  TextEditingController adhaar;
+  TextEditingController name;
+  TextEditingController contact;
+  TextEditingController card;
   bool loggedin = true;
   @override
   Widget build(BuildContext context) {
@@ -40,151 +49,11 @@ class _RapidResponseState extends State<RapidResponse> {
                   fontSize: 20),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Text(
-                    'Name',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                      cursorColor: Colors.black,
-                      decoration: InputDecoration(
-                        hintText: 'Enter your name',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20.0)),
-                      )),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Text(
-                    'Contact No',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                      cursorColor: Colors.black,
-                      decoration: InputDecoration(
-                        hintText: 'Enter your phone number',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20.0)),
-                      )),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 3.9,
-                  child: Text(
-                    'Current Address',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                    cursorColor: Colors.black,
-                    decoration: InputDecoration(
-                      hintText: 'Enter your address',
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20.0)),
-                    ),
-                    maxLines: 3,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Text(
-                    'Designation',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                    cursorColor: Colors.black,
-                    decoration: InputDecoration(
-                      hintText: 'Enter your designation',
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20.0)),
-                    ),
-                    maxLines: 3,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Text(
-                    'Problems Faced',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                    cursorColor: Colors.black,
-                    decoration: InputDecoration(
-                      hintText: 'Enter the problems faced',
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20.0)),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          ok('Name', 'Enter your name', username, 1),
+          ok('Contact No', 'Enter your phone number', phone, 1),
+          ok('Current Address', 'Enter your address', address, 4),
+          ok('Designation', 'Enter your designation', designation, 4),
+          ok('Problems Faced', 'Enter the problems faced', problems, 1),
           Padding(
             padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
@@ -193,7 +62,7 @@ class _RapidResponseState extends State<RapidResponse> {
                 Column(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width / 4,
+                      width: MediaQuery.of(context).size.width / 3.5,
                       child: Text(
                         'Adhaar Card/Government ID',
                         style: TextStyle(fontWeight: FontWeight.w800),
@@ -231,62 +100,8 @@ class _RapidResponseState extends State<RapidResponse> {
                   fontSize: 20),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Text(
-                    'Name',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                      cursorColor: Colors.black,
-                      decoration: InputDecoration(
-                        hintText: 'Enter your name',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20.0)),
-                      )),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 30, right: 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Text(
-                    'Contact No',
-                    style: TextStyle(fontWeight: FontWeight.w800),
-                  ),
-                ),
-                Container(
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: TextFormField(
-                      cursorColor: Colors.black,
-                      decoration: InputDecoration(
-                        hintText: 'Enter your phone number',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20.0)),
-                      )),
-                ),
-              ],
-            ),
-          ),
+          ok('Name', 'Enter your name', name, 1),
+          ok('Contact No', 'Enter your phone number', contact, 1),
           Padding(
             padding: EdgeInsets.only(left: 10, top: 30, right: 10),
             child: Row(
@@ -295,7 +110,7 @@ class _RapidResponseState extends State<RapidResponse> {
                 Column(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width / 4,
+                      width: MediaQuery.of(context).size.width / 3.5,
                       child: Text(
                         'Adhaar Card/Government ID',
                         style: TextStyle(fontWeight: FontWeight.w800),
@@ -336,6 +151,41 @@ class _RapidResponseState extends State<RapidResponse> {
                   style: TextStyle(color: Colors.white),
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget ok(String text1, String text2, TextEditingController controller,
+      int maxlines) {
+    return Padding(
+      padding: EdgeInsets.only(left: 10, top: 30, right: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width / 3.5,
+            child: Text(
+              text1,
+              style: TextStyle(fontWeight: FontWeight.w800),
+            ),
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(20.0)),
+            child: TextFormField(
+              controller: controller,
+              cursorColor: Colors.black,
+              decoration: InputDecoration(
+                hintText: text2,
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0)),
+              ),
+              maxLines: maxlines,
             ),
           ),
         ],

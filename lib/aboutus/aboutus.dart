@@ -170,70 +170,61 @@ class Founder extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: 10),
       child: image != ''
-          ? Row(
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width / 20,
-                  child: VerticalDivider(
-                    color: Colors.black,
-                    thickness: 1.5,
-                  ),
+          ? Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  left: BorderSide(width: 1.5),
                 ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  children: [
-                    CircleAvatar(
-                      backgroundColor: Colors.black,
-                      radius: 60,
-                      child: ClipOval(
-                        child: SizedBox(
-                          height: 120,
-                          width: 100,
-                          child: Image(
-                            image: AssetImage(image),
-                            fit: BoxFit.cover,
+              ),
+                width: MediaQuery.of(context).size.width / 1.07,
+              child: Padding(
+                padding: EdgeInsets.only(left: 10, right: 35),
+                child: Container(
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                        radius: 60,
+                        child: ClipOval(
+                          child: SizedBox(
+                            height: 120,
+                            width: 100,
+                            child: Image(
+                              image: AssetImage(image),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width / 1.2,
-                      child: Text(
-                        text,
-                        style: TextStyle(fontWeight: FontWeight.w500),
+                      SizedBox(
+                        height: 10,
                       ),
-                    ),
-                  ],
-                )
-              ],
+                      Container(
+                        child: Text(
+                          text,
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             )
           : Container(
-              child: Row(
-                children: [
-                  Container(
-                    color: Colors.red,
-                    width: MediaQuery.of(context).size.width / 20,
-                    child: VerticalDivider(
-                      color: Colors.black,
-                      thickness: 1.5,
-                    ),
+              decoration: BoxDecoration(
+                border: Border(
+                  left: BorderSide(width: 1.5),
+                ),
+              ),
+              width: MediaQuery.of(context).size.width / 1.07,
+              child: Padding(
+                padding: EdgeInsets.only(left: 10, right: 35),
+                child: Container(
+                  child: Text(
+                    text,
+                    style: TextStyle(fontWeight: FontWeight.w500),
                   ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width / 1.2,
-                    child: Text(
-                      text,
-                      style: TextStyle(fontWeight: FontWeight.w500),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
     );

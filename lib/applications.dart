@@ -39,9 +39,8 @@ class _ApplicationsState extends State<Applications> {
     return Padding(
       padding: EdgeInsets.only(left: 10, right: 10),
       child: Container(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
+        child: Column(children: [
+          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Padding(
               padding: EdgeInsets.only(left: 10, top: 30),
               child: Column(
@@ -58,62 +57,53 @@ class _ApplicationsState extends State<Applications> {
                     height: 10,
                   ),
                   Text('NGO'),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  RaisedButton(
-                    padding: EdgeInsets.symmetric(horizontal: 40.0),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                    color: Colors.grey[400],
-                    onPressed: () async {},
-                    child: Text(
-                      text,
-                      style: TextStyle(
-                        fontSize: 14.0,
-                        color: Colors.black,
-                        fontFamily: 'Montserrat-SemiBold',
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 30, right: 5),
-              child: Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.white,
-                    radius: 30,
-                    backgroundImage: AssetImage('assets/12.png'),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  RaisedButton(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 37.0, vertical: 5),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                    color: Colors.black,
-                    onPressed: () async {},
-                    child: Text(
-                      'View Details',
-                      style: TextStyle(
-                        fontSize: 14.0,
-                        color: Colors.white,
-                        fontFamily: 'Montserrat-SemiBold',
-                      ),
-                    ),
-                  ),
-                ],
+              padding: EdgeInsets.only(top: 30, right: 42),
+              child: CircleAvatar(
+                backgroundColor: Colors.white,
+                radius: 30,
+                backgroundImage: AssetImage('assets/12.png'),
               ),
             ),
-          ],
-        ),
+          ]),
+          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+            RaisedButton(
+              padding: EdgeInsets.symmetric(horizontal: 40.0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              color: Colors.grey[400],
+              onPressed: () async {},
+              child: Text(
+                text,
+                style: TextStyle(
+                  fontSize: 14.0,
+                  color: Colors.black,
+                  fontFamily: 'Montserrat-SemiBold',
+                ),
+              ),
+            ),
+            RaisedButton(
+              padding: EdgeInsets.symmetric(horizontal: 37.0, vertical: 5),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              color: Colors.black,
+              onPressed: () async {},
+              child: Text(
+                'View Details',
+                style: TextStyle(
+                  fontSize: 14.0,
+                  color: Colors.white,
+                  fontFamily: 'Montserrat-SemiBold',
+                ),
+              ),
+            ),
+          ]),
+        ]),
       ),
     );
   }

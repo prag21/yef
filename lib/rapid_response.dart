@@ -62,7 +62,7 @@ class _RapidResponseState extends State<RapidResponse> {
                 Column(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width / 3.5,
+                      width: MediaQuery.of(context).size.width / 3.2,
                       child: Text(
                         'Adhaar Card/Government ID',
                         style: TextStyle(fontWeight: FontWeight.w800),
@@ -71,7 +71,7 @@ class _RapidResponseState extends State<RapidResponse> {
                   ],
                 ),
                 Container(
-                  width: MediaQuery.of(context).size.width / 2,
+                  width: MediaQuery.of(context).size.width / 1.8,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -110,7 +110,7 @@ class _RapidResponseState extends State<RapidResponse> {
                 Column(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width / 3.5,
+                      width: MediaQuery.of(context).size.width / 3.2,
                       child: Text(
                         'Adhaar Card/Government ID',
                         style: TextStyle(fontWeight: FontWeight.w800),
@@ -119,7 +119,7 @@ class _RapidResponseState extends State<RapidResponse> {
                   ],
                 ),
                 Container(
-                  width: MediaQuery.of(context).size.width / 2,
+                  width: MediaQuery.of(context).size.width / 1.8,
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(20.0)),
@@ -166,14 +166,14 @@ class _RapidResponseState extends State<RapidResponse> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: MediaQuery.of(context).size.width / 3.5,
+            width: MediaQuery.of(context).size.width / 3.2,
             child: Text(
               text1,
               style: TextStyle(fontWeight: FontWeight.w800),
             ),
           ),
           Container(
-            width: MediaQuery.of(context).size.width / 2,
+            width: MediaQuery.of(context).size.width / 1.8,
             decoration: BoxDecoration(
                 color: Colors.grey[200],
                 borderRadius: BorderRadius.circular(20.0)),
